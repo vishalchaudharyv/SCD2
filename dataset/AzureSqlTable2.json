@@ -1,0 +1,52 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Emp_key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EmpID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EmpName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmpSal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EmpAdd",
+				"type": "varchar"
+			},
+			{
+				"name": "St_dt",
+				"type": "date"
+			},
+			{
+				"name": "End_dt",
+				"type": "date"
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DimEmployee"
+		}
+	}
+}
